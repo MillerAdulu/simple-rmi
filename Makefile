@@ -8,3 +8,6 @@ server:
 
 client:
 		java com.adulu.client.ClientOps
+
+git:
+		git push origin master
