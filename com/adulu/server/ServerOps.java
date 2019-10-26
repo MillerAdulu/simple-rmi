@@ -20,6 +20,11 @@ public class ServerOps extends UnicastRemoteObject implements RMIInterface {
         return "Server says hello to " + name;
     }
 
+    @Override
+    public int hashBaby(String bringIt) throws RemoteException {
+        return bringIt.hashCode();
+    }
+
     public static void main(String[] args) {
         try {
 
